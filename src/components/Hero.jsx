@@ -76,19 +76,6 @@ function BackgroundIllustration(props) {
   )
 }
 
-function PlayIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
-      <circle cx="12" cy="12" r="11.5" stroke="#D4D4D4" />
-      <path
-        d="M9.5 14.382V9.618a.5.5 0 0 1 .724-.447l4.764 2.382a.5.5 0 0 1 0 .894l-4.764 2.382a.5.5 0 0 1-.724-.447Z"
-        fill="#A3A3A3"
-        stroke="#A3A3A3"
-      />
-    </svg>
-  )
-}
-
 
 
 
@@ -106,7 +93,7 @@ export function Hero() {
             We understand that choosing a new car can be a difficult task when there are so many options out there. 
             </p>
             <p className="mt-6 text-lg text-gray-600">
-That is why Better Car Consultants will help you narrow down the options and choose the car that will make you the happiest with the lower cost.
+That is why Master Car Consulting will help you narrow down the options and choose the car that will make you the happiest with the lower cost.
             </p>
             
           </div>
