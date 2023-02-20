@@ -12,7 +12,7 @@ export function Logomark(props) {
 
 export function Logo(props) {
   return (
-    <div class="flex items-center h-10">
+    <div className="flex items-center h-10">
       <svg viewBox="0 0 60 40" aria-hidden="true" {...props}>
         <Logomark width="40" height="40" className="fill-blue-700" />
       </svg>

@@ -148,7 +148,7 @@ function usePrevious(value) {
   return ref.current
 }
 
-export function PrimaryFeatures() {
+export function ImproveFeatures() {
   return (
     <section
       id="features"

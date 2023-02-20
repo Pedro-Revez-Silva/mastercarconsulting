@@ -9,8 +9,10 @@ import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { Reviews } from '@/components/Reviews'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
+import { Business } from '@/components/BusinessFeatures'
+import { ImproveFeatures } from '@/components/ImproveFeatures'
 
-export default function Home() {
+export default function Improve() {
   return (
     <>
       <Head>
@@ -22,7 +24,7 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <Hero />
+        <ImproveFeatures />
       </main>
       <Footer />
     </>

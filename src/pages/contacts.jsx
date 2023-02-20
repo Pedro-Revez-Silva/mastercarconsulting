@@ -9,8 +9,9 @@ import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { Reviews } from '@/components/Reviews'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
+import { ContactDetails } from '@/components/ContactDetails'
 
-export default function Home() {
+export default function Contacts() {
   return (
     <>
       <Head>
@@ -22,7 +23,7 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <Hero />
+        <ContactDetails />
       </main>
       <Footer />
     </>

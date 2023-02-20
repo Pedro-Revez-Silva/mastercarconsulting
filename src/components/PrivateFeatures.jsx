@@ -3,6 +3,7 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useDebouncedCallback } from 'use-debounce'
+import  Image   from 'next/image'
 
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
@@ -16,6 +17,8 @@ import {
   TransistorLogo,
   TupleLogo,
 } from '@/components/StockLogos'
+import { Pricing } from './Pricing'
+import  familyWithToddler from '@/images/family-with-toddler-girl-choosing-car-car-showroom.jpg'
 
 function DeviceUserIcon(props) {
   return (
@@ -148,7 +151,7 @@ function usePrevious(value) {
   return ref.current
 }
 
-export function PrimaryFeatures() {
+export function PrivateFeatures() {
   return (
     <section
       id="features"
@@ -156,7 +159,8 @@ export function PrimaryFeatures() {
       className="bg-gray-900 py-20 sm:py-32"
     >
       <Container>
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
+      <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
+          <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
           <h2 className="text-3xl font-medium tracking-tight text-white">
             Buying a car is a big investment.
           </h2>
@@ -177,11 +181,22 @@ export function PrimaryFeatures() {
             We will support you with an independent opinion on which car suits
             you best.
           </p>
+          </div>
+          <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-5">
+            <div className="-mx-4 h-[448px] px-9 [mask-image:linear-gradient(to_bottom,white_80%,transparent)] sm:mx-10 lg:absolute lg:-inset-x-10 lg:-top-20 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32">
+            <Image
+          src={familyWithToddler}
+          alt="Family with toddler in car showroom"
+          width={500}
+          />
+            </div>
+          </div>
         </div>
-        <div></div>
       </Container>
       <div className="mt-16 md:hidden"></div>
-      <Container className="hidden md:mt-20 md:block"></Container>
+      <Container>
+        <Pricing/>
+       </Container>
     </section>
   )
 }
