@@ -55,7 +55,7 @@ export function Footer() {
             </Button>
           </form>
           <p className="mt-6 text-sm text-gray-500 md:mt-0">
-            &copy; Copyright {new Date().getFullYear()}. All rights reserved.
+           Master Car Consulting &copy; Copyright {new Date().getFullYear()}. All rights reserved.
           </p>
         </div>
       </Container>
